@@ -1,5 +1,6 @@
+import { Page } from '../Components/Page'
 const PortfolioPage = () => (
-    <div></div>
+    <Page title="Portfolio">Portfolio</Page>
 )
 
 export default PortfolioPage

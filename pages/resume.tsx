@@ -1,5 +1,7 @@
+import { Page } from '../Components/Page'
+
 const ResumePage = () => (
-    <div></div>
+    <Page title="Resume">Resume</Page>
 )
 
 export default ResumePage
