@@ -4,8 +4,8 @@ export const styles = {
   global: (props: any) => ({
     'html, body': {
       fontSize: 'body',
-      color: mode('light.body', 'dark.body')(props),
-      backgroundColor: mode('light.300', 'dark.300')(props)
+      color: mode('light.text', 'dark.text')(props),
+      backgroundColor: mode('light.background', 'dark.background')(props)
     }
   })
 }
