@@ -1,9 +1,7 @@
 
-import React, { ReactNode } from 'react'
-import { NavBar } from './NavBar'
-import { Box, Heading, HStack, Flex, useColorModeValue } from '@chakra-ui/react'
-import { InfoCard } from './InfoCard'
+import { Heading, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
 import Head from 'next/head'
+import React, { ReactNode } from 'react'
 
 export interface PageProps {
     children: ReactNode,
@@ -20,7 +18,7 @@ const PageHeading = ({ title }: {title: string}) => {
         position="relative"
         height="fit-content"
         color={titleColor}
-        marginBottom={12}
+        marginBottom={4}
         _after={{
           content: '""',
           position: 'absolute',
@@ -40,37 +38,19 @@ const PageHeading = ({ title }: {title: string}) => {
  * Page Library Component
  */
 export const Page = ({ children, title }: PageProps) => {
-  const background = useColorModeValue('light.100', 'dark.100')
   const routeTitle = `${title} - James Litchfield`
 
   return (
-    <Box px={20}>
+    <SimpleGrid padding={6} gap={8}>
+        <PageHeading title={title}/>
+
         <Head>
             <title>{routeTitle}</title>
             <meta property="og:title" content={routeTitle} key="title" />
         </Head>
 
-        <NavBar/>
+        {children}
+    </SimpleGrid>
 
-        <HStack
-            spacing={3}
-            justifyContent="center"
-            bgColor={background}
-            borderRadius="2xl"
-            borderRadiusTopLeft="0">
-
-            <InfoCard />
-
-            <Flex
-                height="80vh"
-                padding={6}
-                spacing={10}
-                flexDir="column"
-                overflowY="scroll">
-                <PageHeading title={title}/>
-                {children}
-            </Flex>
-        </HStack>
-    </Box>
   )
 }
