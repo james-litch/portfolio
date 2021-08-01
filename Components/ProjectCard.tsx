@@ -40,7 +40,7 @@ export const ProjectCard = ({ icon, title, tags, iconBackground, description, ur
           <HStack justifyContent="space-between" spacing={10} paddingX={1}>
             {url
               ? (
-                <Button as="a" variant="link" href="https://www.google.com" boxSize={5}>
+                <Button as="a" variant="link" href={url} boxSize={5}>
                   <Icon as={ HiOutlineExternalLink} color={accentColor} marginRight={2}/>
                     Live
                 </Button>
@@ -49,7 +49,7 @@ export const ProjectCard = ({ icon, title, tags, iconBackground, description, ur
 
            {github
              ? (
-                <Button as="a" variant="link" href="https://www.google.com">
+                <Button as="a" variant="link" href={github}>
                   <Icon as={ AiFillGithub} color={accentColor} marginRight={2} boxSize={5}/>
                   Github
                 </Button>
