@@ -16,6 +16,31 @@ const contacts = [
   { icon: FaLinkedin, href: 'https://www.linkedin.com/in/james-litchfield-34b875154/', label: 'LinkedIn' }
 ]
 
+const ContactLinks = () => {
+  const accentColor = useColorModeValue('light.accent', 'dark.accent')
+  return (
+    <VStack alignItems="start" spacing={2}>
+      {contacts.map(({ icon, href, label }) => (
+        <HStack key={label} spacing={2}>
+          <Icon as={icon} color={accentColor} boxSize={5}/>
+          { href
+            ? (
+                <Button variant="link" as='a' href={href} target="_blank" rel="noreferrer"
+                    _focus={{ outline: 'none', color: accentColor }}>
+                        {label}
+                </Button>
+              )
+            : (
+                <Button variant="link" as='p' _hover={{}}>
+                  {label}
+                </Button>
+              )}
+        </HStack>
+      ))}
+    </VStack>
+  )
+}
+
 /**
  * NavBar Library Component
  */
@@ -30,7 +55,7 @@ export const InfoCard = () => {
       <Box position='sticky' top={0}>
         <VStack spacing={6} alignContent="center" position="static" textAlign="center">
 
-            <Image src="/images/memoji.png" width={200} height={200} layout="fixed"/>
+            <Image src="/images/memoji.png" width={200} height={200} layout="fixed" alt="Memoji Image"/>
 
             <Heading>James Litchfield</Heading>
 
@@ -43,25 +68,7 @@ export const InfoCard = () => {
               Software Developer
             </Badge>
 
-            <VStack alignItems="start" spacing={2}>
-              {contacts.map(({ icon, href, label }) => (
-                <HStack key={label} spacing={2}>
-                  <Icon as={icon} color={buttonColor} boxSize={5}/>
-                { href
-                  ? (
-                    <Button variant="link" as='a' href={href} target="_blank"
-                    _focus={{ outline: 'none', color: buttonColor }}>
-                        {label}
-                    </Button>
-                    )
-                  : (
-                    <Button variant="link" as='p' _hover={{}}>
-                      {label}
-                    </Button>
-                    )}
-                </HStack>
-              ))}
-            </VStack>
+            <ContactLinks />
 
             <Button
               _hover={{ transform: 'scale(1.1)' }}
@@ -80,6 +87,5 @@ export const InfoCard = () => {
           </VStack>
       </Box>
     </Box>
-
   )
 }
