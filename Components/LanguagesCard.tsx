@@ -20,7 +20,7 @@ export const LanguagesCard = () => {
         {languages.map(({ icon, label }) => (
             <HStack
                 marginX={2}
-                marginY={3}
+                marginY={2}
                 key={label}
                 width="fit-content"
                 backgroundColor={accentColor}
