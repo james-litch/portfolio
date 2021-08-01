@@ -74,6 +74,7 @@ export const BurgerMenu = () => {
   return (
     <>
       <IconButton
+        zIndex={100}
         _selected={{ boxShadow: accentShadow }}
         _focus={{ boxShadow: accentShadow }}
         _active={{ boxShadow: accentShadow }}
