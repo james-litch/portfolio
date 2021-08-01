@@ -1,17 +1,10 @@
-import { As, HStack, Icon, useColorModeValue, Text, Flex } from '@chakra-ui/react'
+import { HStack, Icon, useColorModeValue, Text, Flex } from '@chakra-ui/react'
+import { languages } from '../data/languages'
 
-export interface LanguagesCardProps {
-    items: LanguageItem[];
-}
-
-export type LanguageItem = {
-    icon: As<any>;
-    label: string;
-}
 /**
  * LanguagesCard Library Component
  */
-export const LanguagesCard = ({ items }: LanguagesCardProps) => {
+export const LanguagesCard = () => {
   const cardColor = useColorModeValue('light.card', 'dark.card')
   const accentColor = useColorModeValue('light.accent', 'dark.accent')
   return (
@@ -23,11 +16,11 @@ export const LanguagesCard = ({ items }: LanguagesCardProps) => {
         justifyContent="center"
         height='fit-content'
         backgroundColor={cardColor}
-        padding={6}>
-        {items.map(({ icon, label }) => (
+        padding={2}>
+        {languages.map(({ icon, label }) => (
             <HStack
                 marginX={2}
-                marginY={4}
+                marginY={3}
                 key={label}
                 width="fit-content"
                 backgroundColor={accentColor}
