@@ -30,10 +30,6 @@ const IndexPage = () => (
     ))}
     </SimpleGrid>
 
-    <Heading as="h2" size="lg" marginBottom={6}>
-      Testimonials
-    </Heading>
-
   </Page>
 )
 
