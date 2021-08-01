@@ -17,7 +17,7 @@ export const skills = [
   {
     icon: BiServer,
     title: 'API Development',
-    description: 'Creating easy to use REST and GraphQL API\'s'
+    description: 'Creating easy to use REST and GraphQL API\'s.'
   },
   {
     icon: AiOutlineFileSearch,
