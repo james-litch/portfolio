@@ -3,12 +3,7 @@ import { BiSun, BiMoon } from 'react-icons/bi'
 import Link from 'next/link'
 import React from 'react'
 import { useRouter } from 'next/dist/client/router'
-
-const menuItems = [
-  { href: '/', label: 'Home' },
-  { href: '/resume', label: 'Resume' },
-  { href: '/portfolio', label: 'Portfolio' }
-]
+import { navItems } from '../data/navigation'
 
 /**
  * NavBar Library Component
@@ -20,11 +15,10 @@ export const NavBar = () => {
   const icon = useColorModeValue(<BiSun />, <BiMoon />)
 
   return (
-    <HStack width="fit-content" marginLeft="auto" padding={4} paddingRight={1}>
-      {menuItems.map(({ href, label }) => (
+    <HStack width="fit-content" marginLeft="auto" padding={4} paddingRight={1} display={['none', 'flex']}>
+      {navItems.map(({ href, label }) => (
         <Link key={href} href={href} >
-          <Button
-            as="a"
+          <Button as="a"
             isActive={router.pathname === href}
             _active={{ backgroundColor: accentColor, color: 'white' }}>
             {label}

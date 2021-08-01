@@ -3,6 +3,7 @@
 import { Box, Flex, useColorModeValue } from '@chakra-ui/react'
 import Head from 'next/head'
 import React, { ReactNode } from 'react'
+import { BurgerMenu } from './BurgerMenu'
 import { InfoCard } from './InfoCard'
 import { NavBar } from './NavBar'
 
@@ -16,15 +17,16 @@ export default function Layout({ children }: {children: ReactNode}) {
       </Head>
       <main>
         <Box padding={[5, 5, 5]}
-          width={['full', 'full', 'full', 1200]}
+          width={['100vw', '100vw', '100vw', 1200]}
           marginX="auto">
 
           <NavBar />
+          <BurgerMenu />
 
           <Flex
             bgColor={background}
             borderRadius="2xl"
-            flexDir={['column-reverse', 'column-reverse', 'row']}>
+            flexDir={['column-reverse', 'column-reverse', 'column-reverse', 'row']}>
               <InfoCard />
               {children}
           </Flex>
