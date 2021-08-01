@@ -19,6 +19,10 @@ export const Timeline = ({ items }: TimelineProps) => {
   const titleColor = useColorModeValue('light.display', 'dark.display')
   const accentColor = useColorModeValue('light.accent', 'dark.accent')
   const dateColor = useColorModeValue('light.label', 'dark.label')
+  const accentShadow = useColorModeValue(
+    '0 0 0 0.2rem rgb(48 76 253 / 25%)',
+    '0 0 0 0.2em rgb(13 134 255 / 25%)'
+  )
   return (
   <VStack marginLeft={4} paddingRight={4}>
     {items.map(({ label, range, description }) => (
@@ -39,10 +43,11 @@ export const Timeline = ({ items }: TimelineProps) => {
           _before={{
             content: `""`,
             borderRadius: 'full',
-            width: 3.5,
-            height: 3.5,
+            width: 3,
+            height: 3,
             position: 'absolute',
             backgroundColor: accentColor,
+            boxShadow: accentShadow,
             top: 1,
             left: '-7px'
           }}>
