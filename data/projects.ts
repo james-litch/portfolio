@@ -16,49 +16,42 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    icon: IoNewspaperOutline,
+    title: 'Personal Site',
+    description: 'A personal portfolio site created with Next.js and ChakraUI, with built in automatic dark mode.',
+    tags: ['Next.js', 'TypeScript'],
+    github: 'https://github.com/james-litch/portfolio',
+    url: 'https://www.litchfield.dev',
+    iconBackground: 'rgb(38, 36, 51, 0.9)'
+  },
+  {
     icon: CgList,
     title: 'HourBlocks',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis consectetur asperiores at eum repellendus provident, voluptatem libero incidunt cumque dignissimos!',
+    description: 'A native IOS/MacOS day planner, which recieved over 100,000 downloads as well as being \'App of the Day\' in over 150+ countries.',
     tags: ['SwiftUI'],
     iconBackground: 'rgba(245, 169, 27, 0.9)'
   },
   {
     icon: IoSchoolOutline,
     title: 'Nell',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis consectetur asperiores at eum repellendus provident, voluptatem libero incidunt cumque dignissimos!',
-    tags: ['Flutter'],
+    description: 'A cross platform lecture companion built to improve the lecture experiance for both students and lecturers.',
+    tags: ['Flutter', 'GraphQL', 'Node.js'],
     github: 'https://github.com/james-litch/nell_app',
     iconBackground: 'rgba(36, 32, 32, 0.9)'
   },
   {
-    icon: IoSchoolOutline,
-    title: 'Nell API',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis consectetur asperiores at eum repellendus provident, voluptatem libero incidunt cumque dignissimos!',
-    tags: ['Express', 'Node.js'],
-    github: 'https://github.com/james-litch/nell_api',
-    iconBackground: 'rgba(41, 40, 39, 0.9)'
-  },
-  {
     icon: GiJoystick,
-    title: 'PWS 2020',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis consectetur asperiores at eum repellendus provident, voluptatem libero incidunt cumque dignissimos!',
+    title: 'PWS 2021',
+    description: 'A native IOS simulator app that allows you to manage your own professional wrestling roster.',
     tags: ['SwiftUI', 'Node.js'],
     iconBackground: 'rgba(217, 59, 69, 0.9)'
   },
   {
     icon: FaSchool,
     title: 'University Timetable',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis consectetur asperiores at eum repellendus provident, voluptatem libero incidunt cumque dignissimos!',
+    description: 'An Android timetable app created for the univerity\'s group software project. This improved on the existing app by adding attendance registering and location details.',
     tags: ['Java'],
     github: 'https://github.com/james-litch/UoLTimetable',
     iconBackground: 'rgba(46, 56, 166, 0.9)'
-  },
-  {
-    icon: IoNewspaperOutline,
-    title: 'Personal Site',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis consectetur asperiores at eum repellendus provident, voluptatem libero incidunt cumque dignissimos!',
-    tags: ['Next.js', 'TypeScript'],
-    github: 'https://github.com/james-litch/james-litch.github.io',
-    iconBackground: 'rgb(38, 36, 51, 0.9)'
   }
 ]
