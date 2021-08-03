@@ -30,7 +30,7 @@ export const Timeline = ({ items }: TimelineProps) => {
         position="relative"
         borderLeftWidth={1}
         borderLeftStyle="solid"
-        _last={{ borderLeftStyle: 'none', marginBottom: "-40px" }}>
+        _last={{ borderLeftStyle: 'none', marginBottom: ['-20px', '-40px'] }}>
 
           <VStack
           top={-4}

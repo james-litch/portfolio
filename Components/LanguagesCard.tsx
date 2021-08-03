@@ -16,16 +16,16 @@ export const LanguagesCard = () => {
         justifyContent="center"
         height='fit-content'
         backgroundColor={cardColor}
-        padding={2}>
+        padding={[1, 4]}>
         {languages.map(({ icon, label }) => (
             <HStack
-                marginX={2}
+                marginX={[1.5, 2]}
                 marginY={2}
                 key={label}
                 width="fit-content"
                 backgroundColor={accentColor}
-                paddingX={6}
-                paddingY={3}
+                paddingX={[4, 6]}
+                paddingY={[2, 3]}
                 borderRadius="xl">
                 <Icon as={icon} boxSize={6} color="white"/>
                 <Text fontSize="lg"fontWeight="bold" color="white">{label}</Text>
