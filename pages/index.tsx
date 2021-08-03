@@ -7,7 +7,7 @@ const IndexPage = () => (
   <Page title="About Me">
 
     <Box>
-      <Text as="p" marginBottom={2}>I&apos;m a software developer from Liverpool, England, working in mobile and web development. I enjoy taking ideas and turning them into beautiful and responsive apps.</Text>
+      <Text as="p" marginBottom={2}>I&apos;m a software engineer from Liverpool, England, working in mobile and web development. I enjoy taking ideas and turning them into beautiful and responsive apps.</Text>
       <Text as="p">My job is to build responsive applications that are both eye catching and user-friendly. I&apos;m also a team orientated and friendly individual, with knowledge in a vast amount of fields, always willing to learn and try new
 things to the best of my ability.</Text>
     </Box>

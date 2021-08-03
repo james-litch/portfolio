@@ -52,7 +52,7 @@ export const InfoCard = () => {
               height="fit-content"
               rounded="full"
               color={badgeText}>
-              Software Developer
+              Software Engineer
             </Badge>
 
             <ContactLinks />
