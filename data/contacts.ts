@@ -16,8 +16,8 @@ export const contacts = [
   },
   {
     icon: HiOutlineMail,
-    href: 'mailto:james.litchfield99@gmail.com',
-    label: 'james.litchfield99@gmail.com'
+    href: 'mailto:contact@litchfield.dev',
+    label: 'contact@litchfield.dev'
   },
   {
     icon: AiFillGithub,
