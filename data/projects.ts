@@ -29,6 +29,7 @@ export const projects: Project[] = [
     title: 'HourBlocks',
     description: 'A native IOS/MacOS day planner, which recieved over 100,000 downloads as well as being \'App of the Day\' in over 150+ countries.',
     tags: ['SwiftUI'],
+    url: 'https://apps.apple.com/gb/app/hour-blocks-day-planner/id1456275153',
     iconBackground: 'rgba(245, 169, 27, 0.9)'
   },
   {
@@ -44,6 +45,7 @@ export const projects: Project[] = [
     title: 'PWS 2021',
     description: 'A native IOS simulator app that allows you to manage your own professional wrestling roster.',
     tags: ['SwiftUI', 'Node.js'],
+    url: 'https://apps.apple.com/us/app/pro-wrestling-simulator-2021/id1513020607',
     iconBackground: 'rgba(217, 59, 69, 0.9)'
   },
   {
