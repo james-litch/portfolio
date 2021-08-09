@@ -41,7 +41,7 @@ export const Page = ({ children, title }: PageProps) => {
   const routeTitle = `${title} - James Litchfield`
 
   return (
-    <SimpleGrid padding={6} gap={8}>
+    <SimpleGrid padding={6} gap={8} width="full">
         <PageHeading title={title}/>
 
         <Head>
