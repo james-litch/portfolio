@@ -4,7 +4,7 @@ export const jobs: TimelineItem[] = [
   {
     label: 'Dexerto (Mid-level Web Developer)',
     range: 'January 2021 - Present',
-    description: 'Maintaining and improving core web vitals on dexerto.com (PHP), as well as developing components for mystats.com (Next.js).'
+    description: 'Maintaining and improving core web vitals on dexerto.com (PHP), as well as developing mystats.com and the dexerto.com rebuild (Next.js).'
   },
   {
     label: 'Eledev Digital (Full-stack Developer)',

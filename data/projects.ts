@@ -1,5 +1,7 @@
 import { CgList } from 'react-icons/cg'
 import { IoNewspaperOutline, IoSchoolOutline } from 'react-icons/io5'
+import { AiOutlineAim } from 'react-icons/ai'
+import { BsPersonSquare } from 'react-icons/bs'
 import { GiBoxingRing, GiJoystick } from 'react-icons/gi'
 import { As } from '@chakra-ui/react'
 import { FaSchool } from 'react-icons/fa'
@@ -18,6 +20,22 @@ export type Project = {
 export const projects: Project[] = [
   {
     icon: IoNewspaperOutline,
+    title: 'Dexerto.com (rebuild coming soon)',
+    description: 'A news website specialising in internet and gaming culture.',
+    tags: ['Next.js', 'TypeScript', 'Wordpress'],
+    url: 'https://www.dexerto.com',
+    iconBackground: 'rgb(0, 120, 82, 0.9)'
+  },
+  {
+    icon: AiOutlineAim,
+    title: 'Mystats',
+    description: 'A stats tracking application developed for various games.',
+    tags: ['Next.js', 'TypeScript'],
+    url: 'https://www.mystats.gg',
+    iconBackground: 'rgb(250, 212, 32, 0.9)'
+  },
+  {
+    icon: BsPersonSquare,
     title: 'Personal Site',
     description: 'A personal portfolio site created with Next.js and ChakraUI, with built in automatic dark mode.',
     tags: ['Next.js', 'TypeScript'],
